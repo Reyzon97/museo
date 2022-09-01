@@ -1,0 +1,1175 @@
+/*
+
+Tooplate 2119 Gymso Fitness
+
+https://www.tooplate.com/view/2119-gymso-fitness
+
+*/
+
+@font-face {
+  font-family: 'Plain';
+  src: url('../fonts/Plain-Regular.woff2') format('woff2'),
+    url('../fonts/Plain-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plain';
+  src: url('../fonts/Plain-Light.woff2') format('woff2'),
+    url('../fonts/Plain-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plain';
+  src: url('../fonts/Plain-Bold.woff2') format('woff2'),
+    url('../fonts/Plain-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #f13a11;
+  --white-color: #ffffff;
+  --dark-color: #171819;
+  --about-bg-color: #f9f9f9;
+
+  --gray-color: #909090;
+  --link-color: #404040;
+  --p-color: #666262;
+
+  --base-font-family: 'Plain', sans-serif;
+  --font-weight-bold: bold;
+  --font-weight-normal: normal;
+  --font-weight-light: 300;
+  --font-weight-thin: 100;
+
+  --h1-font-size: 48px;
+  --h2-font-size: 36px;
+  --h3-font-size: 28px;
+  --h4-font-size: 24px;
+  --h5-font-size: 22px;
+  --h6-font-size: 22px;
+  --p-font-size: 18px;
+  --base-font-size: 16px;
+  --menu-font-size: 14px;
+}
+
+
+body {
+  background: var(--white-color);
+  font-family: var(--base-font-family);
+}
+
+
+/*---------------------------------------
+     TYPOGRAPHY              
+  -----------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-thin);
+  line-height: normal;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  color: var(--gray-color);
+  font-size: var(--h6-font-size);
+  line-height: inherit;
+  margin: 0;
+}
+
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+  line-height: 1.5em;
+}
+
+b,
+strong {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0;
+}
+
+.section {
+  padding: 7rem 0;
+}
+
+.section2 {
+  padding: 5rem 0;
+}
+
+.section3 {
+  padding-top: 1rem 0;
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*---------------------------------------
+     GENERAL               
+  -----------------------------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--link-color);
+  font-weight: normal;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: var(--primary-color);
+  outline: none;
+  text-decoration: none;
+}
+
+
+/*---------------------------------------
+     MENU             
+  -----------------------------------------*/
+
+.navbar {
+  background: var(--dark-color);
+  padding: 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.navbar-brand {
+  color: var(--white-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+  padding-top: 0;
+}
+
+.nav-item .nav-link {
+  display: block;
+  color: var(--white-color);
+  font-size: var(--menu-font-size);
+  font-weight: var(--font-weight-normal);
+  text-transform: uppercase;
+  padding: 2px 6px;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar .social-icon li a {
+  color: var(--white-color);
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 35px;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: var(--primary-color);
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: var(--primary-color);
+  width: 30px;
+  height: 2px;
+  content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/*---------------------------------------
+     HERO              
+  -----------------------------------------*/
+
+.hero {
+  min-height: 100vh;
+}
+
+.contenido {
+  padding-top: 100px;
+}
+
+.franja {
+  position: absolute;
+  background-color: #7C0101;
+  bottom: 0;
+  right: 0px;
+  width: 800px;
+  height: 400px;
+  text-align: right;
+  border-radius: 200px 0px 0px 0px / 150px 0px 0px 0px;
+}
+
+.franja2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 300px solid transparent;
+  border-top: 300px solid transparent;
+  border-left: 150px solid #7C0101;
+  border-bottom: 150px solid #7C0101;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+
+}
+
+.hijo-banner {
+  position: absolute;
+  top: 40%;
+  right: 40%;
+  transform: rotate(90deg);
+}
+
+.welcome {
+  margin-top: 20%;
+  padding-left: 30px;
+  font-size: 130px;
+}
+
+.museo {
+  margin-top: 10%;
+  font-size: 50px;
+}
+
+.fondo-title {
+  background-color: #7C0101;
+  text-align: center;
+  color: #fff;
+  margin-left: 100px;
+  width: 200px;
+  height: 70px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.text-bg {
+  font-size: 90px;
+  color: #fff;
+  opacity: 5%;
+  line-height: 100px;
+}
+
+.franja-vitrina {
+  position: absolute;
+  left: 0px;
+}
+
+.text-bg-vitrina {
+  font-size: 170px;
+  color: #fff;
+  opacity: 5%;
+  line-height: 150px;
+}
+
+.hero1 {
+  background-color: #7C0101;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.hero2 {
+  background: linear-gradient(90deg, rgba(0,171,233,1) 0%, rgba(255,255,255,0.5127801120448179) 42%, rgba(255,255,255,0) 100%);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 80vh;
+  position: relative; 
+}
+
+.hero3 {
+  background-color: #fff;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  position: relative;
+}
+
+.hero4 {
+  background-color: #fff;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 80vh;
+  position: relative;
+}
+
+.hero5 {
+  background-color: #fff;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 45vh;
+  position: relative;
+}
+
+.hero6 {
+  background-color: #D8D8D8;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 60vh;
+  position: relative;
+}
+
+.title-carousel {
+  text-align: center;
+  color: #fff;
+}
+
+.text-carousel {
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+}
+
+.title2 {
+  text-align: center;
+  margin: 0;
+}
+
+.img-vitrina {
+  border-radius: 50%;
+}
+
+.item {
+  text-align: center;
+}
+
+.turismo-item {
+  margin: 5px;
+  width: 350px;
+  text-align: center;
+}
+
+.turismo-img {
+  height: 400px;
+}
+
+.foot-container{
+  width: 1536px;
+  bottom: 0;
+  padding-top: 5%;
+}
+
+.footer{
+  width: 100%;
+  background-color: #7C0101;
+  text-align: center;
+  height: 12vh;
+  bottom: 0;
+}
+
+.text-footer{
+  top: 30%;
+  position: relative;
+  color: #fff;
+}
+
+/* carrousel*/
+
+.carrousel {
+  width: 100%;
+}
+
+.conteCarrousel {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.itemCarrousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselTarjeta {
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.itemCarrouselArrows {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.itemCarrouselArrows>i:hover {
+  cursor: pointer;
+}
+
+.itemCarrouselArrows>a>i {
+  color: #7C0101;
+}
+
+.img-mv {
+  width: 350px;
+  padding-top: 25%;
+}
+
+.text-mv {
+  text-justify: auto;
+}
+
+.content-text {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.title-plano {
+  text-align: center;
+  color: #D8D8D8;
+}
+
+.conten {
+  position: relative;
+  padding-left: 25%;
+}
+
+
+
+.carrousel1{
+  width: 100%;
+}
+
+.conteCarrousel1{
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  background-image: url(../images/fondoRecurso1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.itemCarrousel1{
+
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselTarjeta1{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.itemCarrouselArrows1{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; 
+}
+
+.itemCarrouselArrows1 > i:hover {
+  cursor: pointer;
+}
+
+.conteCarrouselController1{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.conteCarrouselController1 > a{
+  text-decoration: none;
+  font-size: 2em;
+  color: grey;
+}
+
+.itemCarrouselArrows1 > a > i{
+  color: #7C0101;
+}
+
+/* 5 clumnas*/
+
+.col-xs-5 {
+  min-height: 1px; 
+  position: relative;
+}
+
+.col-xs-5 {
+  float: left;
+  width: 20%;
+}
+
+.btn{
+  background-color: #fff;
+  color: #7C0101;
+  width: 200px;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn:hover{
+  background-color: #7C0101;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.lejos{
+  padding: 2%;
+}
+
+.btn-v{
+  background-color: #fff;
+  color: #7C0101;
+  width: 150px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border-color: transparent;
+  transition: 1.5s ease;
+ 		-moz-transition: 1.5s ease; /* Firefox */
+ 		-webkit-transition: 1.5s ease; /* Chrome - Safari */
+ 		-o-transition: 1.5s ease; /* Opera */
+}
+
+.btn-v:hover{
+  border-color: transparent;
+  transform : scale(1.5);
+		-moz-transform : scale(2); /* Firefox */
+		-webkit-transform : scale(2); /* Chrome - Safari */
+		-o-transform : scale(2); /* Opera */
+		-ms-transform : scale(2); /* IE9 */
+}
+
+.btn-v:active{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*modal*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  text-align: center;
+}
+
+.modal-content2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 55%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  text-align: center;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close1 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close5 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close6 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close6:hover,
+.close6:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close7 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close7:hover,
+.close7:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close8 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close8:hover,
+.close8:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close9 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close9:hover,
+.close9:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close10 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close10:hover,
+.close10:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  text-align: center;
+  padding: 2px 16px;
+  background-color: #7C0101;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.gallery {
+  --s: 175px; /* control the size */
+  --g: 10px;  /* control the gap */
+  --f: 1.5;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(4,auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+
+/*acordeon*/
+
+.accordion {
+  margin: auto;
+  
+}
+.accordion input {
+  display: none;
+}
+.box {
+  
+  position: relative;
+  background: white;
+    transition: all .15s ease-in-out;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+}
+.box-title {
+  width: calc(100% - 40px);
+  height: 64px;
+  color: #7C0101;
+  font-size: 20px;
+  line-height: 64px;
+  padding: 0 20px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+}
+.box-content {
+  text-align: center;
+  width: calc(100% - 40px);
+  padding: 30px 20px;
+  font-size: 11pt;
+  color: rgba(0,0,0,.54);
+  display: none;
+}
+.box-close {
+  position: absolute;
+  height: 64px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+input:checked + .box {
+  height: auto;
+  margin: 16px 0;
+  box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+input:checked + .box .box-title {
+  border-bottom: 1px solid rgba(0,0,0,.18);
+}
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+  display: inline-block;
+}
+.arrows section .box-title {
+  padding-left: 44px;
+  width: calc(100% - 64px);
+}
+.arrows section .box-title:before {
+  position: absolute;
+  display: block;
+  content: '\203a';
+  font-size: 25pt;
+  left: 20px;
+  top: -2px;
+  transition: transform .15s ease-in-out;
+  color:#7C0101;
+}
+input:checked + section.box .box-title:before {
+  transform: rotate(90deg);
+}
+
+/*arrow*/
+
+.arrowed {
+	position: relative;
+	height: 200px; width: 200px;
+	margin: 0 20px 20px 0;
+}
+
+/* Just centering the examples */
+.arrowed div {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	margin: auto;
+}
+
+/* -- ARROW 1      -- */
+
+.arrow-1 {
+	height: 30px; 
+  width: 30px;
+	border: 10px solid #7C0101;
+	border-width: 6px 6px 0 0;
+	transform: rotate(225deg);
+}
+
+.arrow-1:hover{
+  height: 30px; 
+  width: 30px;
+	border: 10px solid #000;
+	border-width: 10px 10px 0 0;
+	transform: rotate(225deg);
+}
+
+.arrow-2 {
+	height: 30px; width: 30px;
+	border: 10px solid #7C0101;
+	border-width: 6px 6px 0 0;
+	transform: rotate(45deg);
+}
+
+.arrow-2:hover {
+	height: 30px; width: 30px;
+	border: 10px solid #000;
+	border-width: 10px 10px 0 0;
+	transform: rotate(45deg);
+}
+
+
+/*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+
+@media screen and (max-width: 992px) {
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .nav-item .nav-link {
+    padding: 6px;
+  }
+
+  .navbar .social-icon {
+    margin-top: 22px;
+  }
+
+  .navbar-collapse,
+  .site-footer {
+    text-align: center;
+  }
+
+  .schedule-table {
+    display: block;
+  }
+
+  .modal-content {
+    padding: 2rem;
+  }
+
+  .welcome {
+    margin-top: 50%;
+    font-size: 80px;
+  }
+
+  .museo {
+    margin-top: 10%;
+    color: #fff;
+    font-size: 40px;
+  }
+
+  .banner {
+    height: 500px;
+
+  }
+
+  .hijo-banner {
+    top: 40%;
+    left: 20%;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .about-working-hours {
+    border-left: 0;
+    padding: 22px 0 0 0;
+  }
+
+  .contact h2 span {
+    display: block;
+  }
+}
