@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.row-flex {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.colum-flex {
+  flex: 25%;
+  padding: 5px;
+}
+
+.colum-flex img {
+  margin-top: 5px;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: 0;
+  padding: 0;
+}
+
+.membership-form a {
+  color: var(--primary-color);
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  text-align: center;
+}
+
+.modal-header {
+  text-align: center;
+  padding: 2px 16px;
+  background-color: #7C0101;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+/* The Close Button */
+.close1,
+.close2,
+.close3,
+.close4,
+.close5,
+.close6,
+.close7,
+.close8,
+.close9,
+.close10,
+.close11,
+.close12,
+.close13,
+.close14,
+.close15,
+.close16,
+.close17,
+.close18,
+.close19,
+.close20,
+.close21,
+.close22,
+.close23,
+.close24,
+.close25,
+.close26,
+.close27,
+.close28,
+.close29,
+.close30,
+.close31,
+.close32,
+.close33,
+.close34,
+.close35,
+.close36,
+.close37,
+.close38,
+.close39,
+.close40,
+.close41,
+.close42,
+.close43,
+.close44,
+.close45,
+.close46,
+.close47,
+.close48,
+.close49,
+.close50,
+.close51,
+.close52,
+.close53,
+.close54,
+.close55,
+.close56,
+.close57,
+.close58,
+.close59,
+.close60 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover, .close1:focus,
+.close2:hover, .close2:focus,
+.close3:hover, .close3:focus,
+.close4:hover, .close4:focus,
+.close5:hover, .close5:focus,
+.close6:hover, .close6:focus,
+.close7:hover, .close7:focus,
+.close8:hover, .close8:focus,
+.close9:hover, .close9:focus,
+.close10:hover, .close10:focus,
+.close11:hover, .close11:focus,
+.close12:hover, .close12:focus,
+.close13:hover, .close13:focus,
+.close14:hover, .close14:focus,
+.close15:hover, .close15:focus,
+.close16:hover, .close16:focus,
+.close17:hover, .close17:focus,
+.close18:hover, .close18:focus,
+.close19:hover, .close19:focus,
+.close20:hover, .close20:focus,
+.close21:hover, .close21:focus,
+.close21:hover, .close22:focus,
+.close23:hover, .close23:focus,
+.close24:hover, .close24:focus,
+.close25:hover, .close25:focus,
+.close26:hover, .close26:focus,
+.close27:hover, .close27:focus,
+.close28:hover, .close28:focus,
+.close29:hover, .close29:focus,
+.close30:hover, .close30:focus,
+.close31:hover, .close31:focus,
+.close32:hover, .close32:focus,
+.close33:hover, .close33:focus,
+.close34:hover, .close34:focus,
+.close35:hover, .close36:focus,
+.close37:hover, .close37:focus,
+.close38:hover, .close38:focus,
+.close39:hover, .close39:focus,
+.close40:hover, .close40:focus,
+.close41:hover, .close41:focus,
+.close42:hover, .close42:focus,
+.close43:hover, .close43:focus,
+.close44:hover, .close44:focus,
+.close45:hover, .close45:focus,
+.close46:hover, .close46:focus,
+.close47:hover, .close47:focus,
+.close48:hover, .close48:focus,
+.close49:hover, .close49:focus,
+.close50:hover, .close50:focus,
+.close51:hover, .close51:focus,
+.close52:hover, .close52:focus,
+.close53:hover, .close53:focus,
+.close54:hover, .close54:focus,
+.close55:hover, .close55:focus,
+.close56:hover, .close56:focus,
+.close57:hover, .close57:focus,
+.close58:hover, .close58:focus,
+.close59:hover, .close59:focus,
+.close60:hover, .close60:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .colum-flex {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .colum-flex {
+    flex: 100%;
+  }
+}
