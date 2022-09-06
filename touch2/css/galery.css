@@ -10,6 +10,44 @@ body {
 img {
   width: 100%;
 }
+a{
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #000;
+  outline: none;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 35px;
+}
+span{
+  font-size: 30px;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.mas{
+  
+  background-color: #7C0101;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  
+}
 
 .row-flex {
   display: flex;
@@ -74,7 +112,7 @@ button {
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 90%;
+  width: 75%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -91,8 +129,21 @@ button {
 }
 
 .modal-body {
-  padding: 2px 16px;
+  padding: 16px 16px;
+  text-align: left;
+}
+
+.modal-img{
   text-align: center;
+}
+
+.modal-contenido{
+  position: relative;
+}
+
+.hijo{
+  position: absolute;
+  top: 15%;
 }
 
 .modal-footer {
@@ -186,7 +237,10 @@ button {
 .close57,
 .close58,
 .close59,
-.close60 {
+.close60,
+.close61,
+.close62,
+.close63  {
   color: white;
   float: right;
   font-size: 28px;
@@ -251,7 +305,10 @@ button {
 .close57:hover, .close57:focus,
 .close58:hover, .close58:focus,
 .close59:hover, .close59:focus,
-.close60:hover, .close60:focus {
+.close60:hover, .close60:focus,
+.close61:hover, .close61:focus,
+.close62:hover, .close62:focus,
+.close63:hover, .close63:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

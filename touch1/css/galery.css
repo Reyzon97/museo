@@ -10,12 +10,43 @@ body {
 img {
   width: 100%;
 }
+a{
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #000;
+  outline: none;
+  text-decoration: none;
+}
 
 h1{
   font-size: 35px;
 }
 span{
   font-size: 30px;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.mas{
+  
+  background-color: #7C0101;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  
 }
 
 .row-flex {
