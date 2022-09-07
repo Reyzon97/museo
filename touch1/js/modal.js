@@ -198,7 +198,7 @@ btn4.onclick = function () {
     modal4.style.display = "block";
 }
 btn5.onclick = function () {
-    modal4.style.display = "block";
+    modal5.style.display = "block";
 }
 btn6.onclick = function () {
     modal6.style.display = "block";

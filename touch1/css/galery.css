@@ -77,10 +77,6 @@ button {
   padding: 0;
 }
 
-.membership-form a {
-  color: var(--primary-color);
-}
-
 .modal {
   display: none;
   /* Hidden by default */
