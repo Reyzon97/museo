@@ -135,6 +135,11 @@ strong {
   padding: 7rem 0;
 }
 
+.section-video{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .bg-color {
   background: var(--primary-color);
   color: var(--white-color);
@@ -395,6 +400,16 @@ a:focus {
   background-repeat: no-repeat;
   vertical-align: middle;
   min-height: 100vh;
+  position: relative;
+}
+
+.hero-videos {
+  background-color: #fff ;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 60vh;
   position: relative;
 }
 

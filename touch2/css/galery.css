@@ -31,6 +31,10 @@ span{
   font-size: 30px;
 }
 
+p{
+  font-size: 25px;
+}
+
 .contenedor{
   display: flex;
   justify-content: center;
@@ -69,6 +73,11 @@ button {
   margin: 0;
   padding: 0;
 }
+
+.color{
+  background: rgba(124, 1, 1, 0.23);
+}
+
 
 .modal-header,
 .modal-body,
@@ -137,19 +146,25 @@ button {
   text-align: center;
 }
 
-.modal-contenido{
-  position: relative;
-}
+
 
 .hijo{
-  position: absolute;
   top: 15%;
+  padding: 10px;
 }
 
 .modal-footer {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
+}
+
+.linea{
+  width: 100%;
+  height: 2px;
+  background-color: #7C0101;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* Add Animation */

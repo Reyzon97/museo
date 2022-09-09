@@ -139,6 +139,11 @@ strong {
   padding-top: 1rem 0;
 }
 
+.section-video{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 input[type=text], select, textarea{
   width: 100%;
   padding: 12px;
@@ -476,6 +481,16 @@ a:focus {
   position: relative;
 }
 
+.hero-videos {
+  background-color: #7C0101 ;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 60vh;
+  position: relative;
+}
+
 .title-carousel {
   text-align: center;
   color: #fff;
@@ -530,6 +545,10 @@ a:focus {
   top: 30%;
   position: relative;
   color: #fff;
+}
+
+.btn-video{
+  border: none;
 }
 
 /* carrousel*/
@@ -783,7 +802,7 @@ a:focus {
 }
 
 /* The Close Button */
-.close1 {
+.close1, .close2, .close3, .close4, .close5, .close6, .close7, .close8, .close9, .close10, .close11, .close12, .close13 {
   color: white;
   float: right;
   font-size: 28px;
@@ -791,133 +810,31 @@ a:focus {
 }
 
 .close1:hover,
-.close1:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close2 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close1:focus,
 .close2:hover,
-.close2:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close3 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close2:focus,
 .close3:hover,
-.close3:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close4 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close3:focus,
 .close4:hover,
-.close4:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close5 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close4:focus
 .close5:hover,
-.close5:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close6 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close5:focus,
 .close6:hover,
-.close6:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close7 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close6:focus,
 .close7:hover,
-.close7:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close8 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close7:focus,
 .close8:hover,
-.close8:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close9 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close8:focus,
 .close9:hover,
-.close9:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.close10 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
+.close9:focus,
 .close10:hover,
-.close10:focus {
+.close10:focus,
+.close11:hover,
+.close11:focus,
+.close12:hover,
+.close12:focus,
+.close13:hover,
+.close13:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
